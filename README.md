@@ -1,11 +1,10 @@
 # react-native-tcscan
-***
+
 React-Native 二维码扫描插件，同时支持 iOS & Android
      
 ##	Requirements
-***
-* Requires iOS 7 or later
 
+* Requires iOS 7 or later
 
 ##	Installation
 *	`1. npm install -g rnpm`
@@ -14,8 +13,6 @@ React-Native 二维码扫描插件，同时支持 iOS & Android
 
 #### Note:
 *	rnpm requires node version 4.1 or higher
-
-***
 
 # Usage
 
@@ -33,25 +30,21 @@ React-Native 二维码扫描插件，同时支持 iOS & Android
 
     class Demo extends Component {
 
-    _onPressButton(){
-    	//event: scan result
-      rnModule.scan((event)=>{alert(event);});
-    }
+     _onPressButton(){
+    	     //event: scan result
+          rnModule.scan((event)=>{alert(event);});
+     }
 
       render() {
         return (
           <View style={styles.container}>
-             
-
                <TouchableOpacity onPress={this._onPressButton}>
                 <Text> scan</Text>
               </TouchableOpacity>
-
           </View>
         );
       }
     }
-
     const styles = StyleSheet.create({
         container: {
             flex: 1,
@@ -60,9 +53,4 @@ React-Native 二维码扫描插件，同时支持 iOS & Android
             backgroundColor: '#F5FCFF',
         },
     });
-
     AppRegistry.registerComponent('Demo', () => Demo);
-
-
-
-
